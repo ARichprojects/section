@@ -1,0 +1,140 @@
+body {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.container {
+    text-align: center;
+    background: #006633;
+    border-radius: 16px 0px 0px 16px;
+    position: absolute;
+    width: 416px;
+    height: 333px;
+}
+.title { 
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFF;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    margin: 30px 20px 30px 20px;
+    vertical-align: middle;
+}
+.title img {
+    margin-right: 8px;
+}
+.checkbox {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    margin-left: 23px;
+}
+img.close {
+    position: absolute;
+    height: 14px;
+    width: 14px;
+    top: 17px;
+    right: 26px;
+}
+
+input[type=text] {
+    width: 375px;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid #006633;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+input[type=text]:focus,input[type=text]:hover {
+    border: 2px solid #55AE3A;
+    outline: none;
+}
+
+input[type=text]:focus::placeholder {
+    color: transparent;
+  }
+
+input[type=text]:focus:not(:hover) {
+    border: 1px solid #006633;
+}
+input[type=text]:focus:not(:hover)::placeholder {
+    color: #7b7b7b;
+}
+a.link {
+    text-decoration: underline;
+    color: #fff;
+    cursor: context-menu;
+    font-weight: bold;
+}
+a.link:hover {
+    color: #55AE3A;
+}
+input[type="checkbox"] {
+    display: none;
+}
+input[type="checkbox"] + label::before {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-right: 6px;
+    background-color: #006633;
+    border: 3px solid #FFFFFF;
+    border-radius: 3px;
+}
+input[type="checkbox"]:checked + label::before {
+    background-color: #55AE3A;
+}
+input[type="checkbox"]:checked + label::after {
+    content: "✔";
+    font-size: 14px;
+    color: white;
+    position: absolute;
+    left: 30px;
+    bottom: 112px;
+}
+button {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #55AE3A;
+    border-radius: 20px;
+    width: 170px;
+    height: 32px;
+    border: none;
+    color: white;
+    font-size: 14px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    left: 72px;
+    top: 269px;
+}
+button img {
+    margin-right: 6px;
+}
+button:hover {
+    background: #FFCE00;
+}
+button:active {
+    background: #363636;
+}
+
+.letter {
+    position: absolute;
+    top: 227px;
+    left: 306px;
+    width: 89px;
+    height: 75px;
+}
